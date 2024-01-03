@@ -1,0 +1,10 @@
+{
+	"namespace": "Kirefel",
+	"name": "Bazaar_Qol",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Kirefel/r2-mods",
+	"description": "Invincibility in the shop and stage name text for lunar seers",
+	"dependencies": [
+		"RiskofThunder-R2API_Core-5.0.11"
+	]
+}
