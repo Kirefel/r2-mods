@@ -1,0 +1,10 @@
+{
+	"namespace": "Kirefel",
+	"name": "Collapse_Tuning",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Kirefel/r2-mods",
+	"description": "Reduce incoming collapse damage",
+	"dependencies": [
+		"RiskofThunder-R2API_Core-5.0.11"
+	]
+}

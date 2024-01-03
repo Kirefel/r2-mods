@@ -25,5 +25,7 @@ public class Plugin : BaseUnityPlugin
             orig(self, targetSceneDef);
             self.GetComponent<PurchaseInteraction>().contextToken = targetSceneDef.nameToken;
         };
+
+        Logger.LogInfo("Setup complete!");
     }
 }
