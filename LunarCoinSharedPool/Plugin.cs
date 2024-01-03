@@ -15,20 +15,31 @@ public class Plugin : BaseUnityPlugin
     void Awake()
     {
         EphemeralCoins.BepConfig.EnableArtifact.Value = 2;
-        CostTypeCatalog.GetCostTypeDef(CostTypeIndex.LunarCoin).payCost = (costTypeDef, context) =>
+
+        On.RoR2.CostTypeCatalog.Init += orig =>
         {
-            foreach (var master in PlayerCharacterMasterController.instances)
+            orig();
+            CostTypeCatalog.GetCostTypeDef(CostTypeIndex.LunarCoin).payCost = (costTypeDef, context) =>
             {
-                master.networkUser.DeductLunarCoins((uint)context.cost);
-                MultiShopCardUtils.OnNonMoneyPurchase(context);
-            }
+                foreach (var master in PlayerCharacterMasterController.instances)
+                {
+                    master.networkUser.DeductLunarCoins((uint)context.cost);
+                    MultiShopCardUtils.OnNonMoneyPurchase(context);
+                }
+            };
         };
 
         // Catch up late joiners
         On.RoR2.Run.OnUserAdded += (orig, self, user) =>
         {
-            uint max = EphemeralCoins.EphemeralCoins.instance.coinCounts.Max(x => x.ephemeralCoinCount);
-            EphemeralCoins.EphemeralCoins.instance.giveCoinsToUser(user, max);
+            orig(self, user);
+            if (EphemeralCoins.EphemeralCoins.instance?.coinCounts.Count > 0)
+            {
+                uint max = EphemeralCoins.EphemeralCoins.instance.coinCounts.Max(x => x.ephemeralCoinCount);
+                EphemeralCoins.EphemeralCoins.instance.giveCoinsToUser(user, max);
+            }
         };
+
+        Logger.LogInfo("Loaded successfully!");
     }
 }
