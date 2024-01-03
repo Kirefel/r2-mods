@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazaarQol", "BazaarQol\BazaarQol.csproj", "{998623E8-FA80-4925-96E5-82A1414B0994}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollapseTuning", "CollapseTuning\CollapseTuning.csproj", "{587F9356-8204-46DF-9C2A-E1438B327ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarCoinSharedPool", "LunarCoinSharedPool\LunarCoinSharedPool.csproj", "{AD2A71EF-29EC-49FE-9984-65ECF7B60B2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{998623E8-FA80-4925-96E5-82A1414B0994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{998623E8-FA80-4925-96E5-82A1414B0994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{998623E8-FA80-4925-96E5-82A1414B0994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587F9356-8204-46DF-9C2A-E1438B327ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587F9356-8204-46DF-9C2A-E1438B327ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587F9356-8204-46DF-9C2A-E1438B327ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587F9356-8204-46DF-9C2A-E1438B327ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2A71EF-29EC-49FE-9984-65ECF7B60B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2A71EF-29EC-49FE-9984-65ECF7B60B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2A71EF-29EC-49FE-9984-65ECF7B60B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2A71EF-29EC-49FE-9984-65ECF7B60B2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

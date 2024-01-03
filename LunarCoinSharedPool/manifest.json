@@ -1,0 +1,12 @@
+{
+	"namespace": "Kirefel",
+	"name": "Lunar_Coin_Shared_Pool",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Kirefel/r2-mods",
+	"description": "Fully shared ephemeral coins - all users gain and spend coins together",
+	"dependencies": [
+		"RiskofThunder-R2API_Core-5.0.11",
+		"dan8991iel-LunarCoinShareOnPickup-4.2.1",
+		"VarnaScelestus-Ephemeral_Coins-2.3.3"
+	]
+}

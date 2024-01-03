@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="R2API" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EphemeralCoins">
+      <HintPath>EphemeralCoins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
